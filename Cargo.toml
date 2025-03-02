@@ -1,0 +1,20 @@
+[package]
+name = "paxrs"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+sim = ["turmoil"]
+
+[dependencies]
+anyhow = { version = "1.0.96", features = ["backtrace"] }
+axum = { version = "0.8.1", features = ["tokio"] }
+camino = "1.1.9"
+hyper = "1.6.0"
+hyper-util = { version = "0.1.10", features = ["client-legacy"] }
+pin-project-lite = "0.2.16"
+tokio = { version = "1.43.0", features = ["full"] }
+tower = "0.5.2"
+turmoil = { version = "0.6", optional = true }
+
+
