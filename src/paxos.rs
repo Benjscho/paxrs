@@ -1,13 +1,12 @@
 use std::net::{IpAddr, Ipv4Addr};
 
 use axum::{extract::Path, routing::get, Router};
-use camino::Utf8PathBuf;
 
 use crate::net::{AxumListener, TcpListener};
 
-struct PaxosRunArgs {
-    port: u16,
-    persistance_dir: Utf8PathBuf,
+pub struct PaxosRunArgs {
+    pub port: u16,
+    //pub persistance_dir: Utf8PathBuf,
 }
 
 // Hosts need to persist some info in between crashes, this can be done via

@@ -1,2 +1,2 @@
 pub mod net;
-mod paxos;
+pub mod paxos;
